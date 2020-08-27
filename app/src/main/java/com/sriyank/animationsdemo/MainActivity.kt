@@ -21,17 +21,15 @@ class MainActivity : AppCompatActivity() {
 
 		// Step 1: Create a Scene object for both the starting and ending layout
 		scene1 = Scene.getSceneForLayout(sceneRoot, R.layout.scene1, this)
-
+		scene2 = Scene.getSceneForLayout(sceneRoot, R.layout.scene2, this)
 
 		// Step 2: Create a Transition object to define what type of animation you want
-
 
 		scene1.enter()
 		currentScene = scene1
 	}
 
 	fun onClick(view: View) {
-
 		// Step 3: Call TransitionManager.go() to run animation
 		
 	}
