@@ -31,12 +31,12 @@ class MainActivity : AppCompatActivity() {
 
 	fun onClick(view: View) {
 		// Step 3: Call TransitionManager.go() to run animation
-		if (currentScene === scene1){
+		currentScene = if (currentScene === scene1){
 			TransitionManager.go(scene2)
-			currentScene = scene2
+			scene2
 		} else {
 			TransitionManager.go(scene1)
-			currentScene = scene1
+			scene1
 		}
 		
 	}
